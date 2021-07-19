@@ -1,5 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras.layers.experimental import keras_preprocessing
+from tensorflow.keras import layers
+from tensorflow.keras.layers.preprocessing import text
 
 keras.layers.experimental.preprocessing.StringLookup(
     max_tokens=None, num_oov_indices=1, mask_token=None,
@@ -40,7 +42,7 @@ async def ai_gen_tf(ctx):
 
     chars = tf.strings.unicode_split(example_texts, input_encoding='UTF-8')
 
-    ids_from_chars = .text.text_to_word_sequence(vocabulary=list(vocab), mask_token=None)
+    ids_from_chars = tf.keras.preprocessing.text.text_to_word_sequence(vocabulary=list(vocab), mask_token=None)
 
     ids = ids_from_chars(chars)
 
