@@ -5,7 +5,7 @@ import starter
 import grabber
 import ai
 
-bot_token = 'ODA4NTgwNzIyOTU2MzA0NDI0.YCInew.X4ohAn9AXFHcPMyrM1F0XHW6OeA'
+bot_token = 'bottokenhere'
 bot = starter.squeaker()
 
 # Sets the game status / states when the bot is online
